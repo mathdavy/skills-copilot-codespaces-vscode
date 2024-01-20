@@ -45,38 +45,3 @@ app.post('/comments', async (req, res) => {
 // Start Server
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listening on port ${port}...`));
-
-// Create Views
-// Create views folder
-// Create index.html
-// Create comment.html
-// Create comments.html
-
-// Create index.html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Comment System</title>
-  </head>
-  <body>
-    <h1>Comment System</h1>
-    <form action="/comments" method="POST">
-      <input type="text" name="name" placeholder="Name" /><br />
-      <input type="email" name="email" placeholder="Email" /><br />
-      <textarea name="comment" placeholder="Comment"></textarea><br />
-      <button type="submit">Submit</button>
-    </form>
-  </body>
-</html>
-
-// Create comment.html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Comment System</title>
-  </head>
-  <body>
-    <h1>Comment System</h1>
-    <form action="/comments" method="POST">
-      <input type="text" name="name" placeholder="Name" /><br />
-      <input type="email" name="email" placeholder="Email" /><br
